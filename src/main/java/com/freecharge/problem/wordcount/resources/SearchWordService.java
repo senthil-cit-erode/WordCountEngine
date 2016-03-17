@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import com.freecharge.problem.wordcount.controller.WordSearch;
 import com.freecharge.problem.wordcount.models.WordCount;
 
-@Path("/WordSearchService")
+@Path("/WordCountEngine")
 public class SearchWordService {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
