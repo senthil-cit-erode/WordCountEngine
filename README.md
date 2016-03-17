@@ -11,3 +11,7 @@ Buil Steps
 2. mvn clean install
 3. cd target 
 4. java -cp WordCountEngine-0.0.1-SNAPSHOT.jar com.freecharge.problem.wordcount.services.WordCountServiceInitiator corpus_source_path
+
+Rest URI 
+--------
+GET Request : http://localhost:8080/WordSearchService?query=wordToSearch
