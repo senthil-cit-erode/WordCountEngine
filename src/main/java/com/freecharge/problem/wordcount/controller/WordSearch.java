@@ -46,7 +46,7 @@ public class WordSearch {
 			}
 		} else {
 			if(folder.getAbsolutePath().endsWith(".txt")){
-				System.out.println("Adding file : "folder.getAbsolutePath());
+				System.out.println("Adding file : "+folder.getAbsolutePath());
 				loadMap(folder);
 			} else {
 				System.out.println("Skipping file : "+folder.getAbsolutePath());
