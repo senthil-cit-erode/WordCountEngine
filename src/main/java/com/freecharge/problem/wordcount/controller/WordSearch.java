@@ -41,7 +41,12 @@ public class WordSearch {
 				if (fileEntry.isDirectory()) {
 					listFilesFromFolder(fileEntry);
 				} else {
-					loadMap(fileEntry);
+					if(folder.getAbsolutePath().endsWith(".txt")){
+						System.out.println("Adding file : "+folder.getAbsolutePath());
+						loadMap(fileEntry);
+					} else {
+						System.out.println("Skipping file : "+folder.getAbsolutePath());
+					}
 				}
 			}
 		} else {
