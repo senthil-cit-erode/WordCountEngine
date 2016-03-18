@@ -45,7 +45,11 @@ public class WordSearch {
 				}
 			}
 		} else {
-			loadMap(folder);
+			if(folder.getAbsolutePath().endsWith(".txt")){
+				loadMap(folder);
+			} else {
+				System.out.println("Skipping file : "+folder.getAbsolutePath());
+			}
 		}
 	}
 
