@@ -12,7 +12,8 @@ public class WordCountServiceInitiator {
      public static void main(String[] args) throws Exception {
     	 
     	 if(args.length > 1 || args.length < 1){
-    		 System.out.println("Argument can only be a FileName or FolderName\n If Multiple Files need to be added those to a Folder ");
+    		 System.out.println("Argument can only be a FileName or FolderName\n If Multiple Files need to be added, add those to a Folder ");
+    		 return;
     	 }
     	 
     	 FolderConfig.getInstance().setFolderName(args[0]);

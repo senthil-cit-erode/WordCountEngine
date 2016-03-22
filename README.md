@@ -14,4 +14,4 @@ Buil Steps
 
 Rest URI 
 --------
-GET Request : http://localhost:8080/WordSearchService?query=wordToSearch
+GET Request : http://localhost:8080/WordCountEngine?query=wordToSearch

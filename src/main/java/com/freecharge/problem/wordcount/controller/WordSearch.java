@@ -41,11 +41,21 @@ public class WordSearch {
 				if (fileEntry.isDirectory()) {
 					listFilesFromFolder(fileEntry);
 				} else {
-					loadMap(fileEntry);
+					if(fileEntry.getAbsolutePath().endsWith(".txt")){
+						System.out.println("Adding file : "+fileEntry.getAbsolutePath());
+						loadMap(fileEntry);
+					} else {
+						System.out.println("Skipping file : "+fileEntry.getAbsolutePath());
+					}
 				}
 			}
 		} else {
-			loadMap(folder);
+			if(folder.getAbsolutePath().endsWith(".txt")){
+				System.out.println("Adding file : "+folder.getAbsolutePath());
+				loadMap(folder);
+			} else {
+				System.out.println("Skipping file : "+folder.getAbsolutePath());
+			}
 		}
 	}
 
