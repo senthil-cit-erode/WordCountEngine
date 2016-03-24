@@ -41,20 +41,20 @@ public class WordSearch {
 				if (fileEntry.isDirectory()) {
 					listFilesFromFolder(fileEntry);
 				} else {
-					if(fileEntry.getAbsolutePath().endsWith(".txt")){
-						System.out.println("Adding file : "+fileEntry.getAbsolutePath());
+					if (fileEntry.getAbsolutePath().endsWith(".txt")) {
 						loadMap(fileEntry);
+						SourceFileRepo.getInstance().addSourceFile(fileEntry.getAbsolutePath());
 					} else {
-						System.out.println("Skipping file : "+fileEntry.getAbsolutePath());
+						System.out.println("Skipping file : " + fileEntry.getAbsolutePath());
 					}
 				}
 			}
 		} else {
-			if(folder.getAbsolutePath().endsWith(".txt")){
-				System.out.println("Adding file : "+folder.getAbsolutePath());
+			if (folder.getAbsolutePath().endsWith(".txt")) {
 				loadMap(folder);
+				SourceFileRepo.getInstance().addSourceFile(folder.getAbsolutePath());
 			} else {
-				System.out.println("Skipping file : "+folder.getAbsolutePath());
+				System.out.println("Skipping file : " + folder.getAbsolutePath());
 			}
 		}
 	}

@@ -5,24 +5,24 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class WordCount {
-	int count;
-	String word;
-	
+	private int count;
+	private String word;
+
 	@XmlElement
-	public void setCount(int count){
+	public void setCount(int count) {
 		this.count = count;
 	}
-	
+
 	@XmlElement
-	public void setWord(String word){
+	public void setWord(String word) {
 		this.word = word;
 	}
-	
-	public int getCount(){
+
+	public int getCount() {
 		return count;
 	}
-	
-	public String getWord(){
+
+	public String getWord() {
 		return word;
 	}
 

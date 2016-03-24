@@ -14,4 +14,5 @@ Buil Steps
 
 Rest URI 
 --------
-GET Request : http://localhost:8080/WordCountEngine?query=wordToSearch
+GET Request to get the word count: http://<hostip>:8080/WordCountEngine?query=wordToSearch
+GET Request to get the corpus source files list : http://<hostip>:8080/WordCountEngine/sourceFiles
